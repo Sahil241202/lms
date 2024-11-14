@@ -29,6 +29,10 @@ interface ChapterTitleFormProps {
     chapterId: string;
 }
 
+console.log("MUX_TOKEN_ID:", process.env.MUX_TOKEN_ID);
+console.log("MUX_TOKEN_SECRET:", process.env.MUX_TOKEN_SECRET);
+
+
 const formSchema = z.object({
     title: z.string().min(1),
 });
